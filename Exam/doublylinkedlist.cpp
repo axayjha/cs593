@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cstdlib>
+#include <string>
 using namespace std;
 
 #define epsilon 0.001 // accuracy for mathematical calculations
@@ -95,6 +96,21 @@ int main()
 	l1.push(5.999);
 	l1.display();
 	l1.pop();
-	l1.pop();//l1.pop();
+	l1.pop();
 	l1.display();
+
+	List <string> l2;
+	l2.push("Akshay");
+	l2.push("Shreya");
+	l2.pop();
+	l2.push("Linux");
+	l2.display();
 }
+
+/*
+OUTPUT
+{ 6.00, 45.44, 3.00, }
+{ 3.00, }
+{ Linux, Akshay, }
+
+*/
