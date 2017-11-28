@@ -30,6 +30,8 @@ public:
 node *newNode(int val);
 node* _insert(node *rootp, node *newp);
 
+void printn(node *rootp, const char arg[]);
+
 void applyinorder(node *rootp, 
 	void(*fn)(node *, const char *), const char arg[]);
 
