@@ -217,10 +217,6 @@ int main()
 bool powerOfTwo(int num)
 {
     /*returns true if the number is a power of 2, false otherwise*/
-    for(int i=0; i<=num/2; i++)
-    {
-        if(pow(2, i) == num)
-            return true;
-    }
+    if(num>0 && (num&(num-1))==0) return true;
     return false;
 }
