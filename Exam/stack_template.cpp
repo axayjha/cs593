@@ -1,4 +1,6 @@
 #include <iostream>
+#include <string>
+#include <cstdlib>
 #define MAX 50
 
 using namespace std;
@@ -39,7 +41,7 @@ template <class type> type Stack<type> :: pop()
 	if(tos==-1)
 	{
 		cout << "STACK UNDERFLOW" << endl;
-		return -99999;
+		exit(0);
 	}
 	return arr[tos--];
 }	
@@ -47,9 +49,13 @@ template <class type> type Stack<type> :: pop()
 int main()
 {
 	Stack <int>s1;
+	Stack <string>s2;
 	s1.push(2);
 	s1.push(3);
 
+
+	s2.push("akshay");
+	cout<<s2.pop() << endl;
 	cout << s1.pop() << endl;
 
 
